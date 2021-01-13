@@ -5,10 +5,15 @@ function numberLength(number) {
     if (!isFinite (number) || isNaN(number)) {
         return 'ERROR: reikia normalaus skaiciaus'
     }
-
+    
     
     const numberAsString = '' + number;
     
+    for ( i = 0; i < numberAsString.length; i++) {
+        if ( numberAsString[i] === "e") {
+            return 'ERROR: Number contains too many characters'
+        }
+    }
     
     let length = numberAsString.length;
 
@@ -25,16 +30,16 @@ function numberLength(number) {
 
 
 
-console.log( numberLength('asd'));
-console.log( numberLength(true));
-console.log( numberLength(NaN));
-console.log( numberLength(Infinity));
+// console.log( numberLength('asd'));
+// console.log( numberLength(true));
+// console.log( numberLength(NaN));
+// console.log( numberLength(Infinity));
+// console.log( numberLength(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000));
 
-console.log( numberLength());
+// console.log( numberLength());
 
-console.log( numberLength(5));
-console.log( numberLength(781));
-console.log( numberLength(3.2));
+// console.log( numberLength(5));
+// console.log( numberLength(781));
+// console.log( numberLength(3.2));
 
-console.log( numberLength(100000000000));
-console.log( numberLength(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000));
+console.log( numberLength(4e1));
