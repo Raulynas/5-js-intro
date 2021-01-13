@@ -24,6 +24,7 @@ function numberLength(number) {
 
 
 
+
 console.log( numberLength('asd'));
 console.log( numberLength(true));
 console.log( numberLength(NaN));
@@ -34,4 +35,6 @@ console.log( numberLength());
 console.log( numberLength(5));
 console.log( numberLength(781));
 console.log( numberLength(3.2));
-console.log( numberLength(3.1415));
+
+console.log( numberLength(100000000000));
+console.log( numberLength(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000));
