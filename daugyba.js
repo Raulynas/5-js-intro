@@ -24,7 +24,7 @@ function daugyba(a, b) {
 
     // logic
     const ats = a * b;
-    return ats;
+    return ats === 0 ? 0 : ats;
 }
 
 // skaiciai: teigiami, nulis, neigiami
