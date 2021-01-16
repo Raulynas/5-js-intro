@@ -38,4 +38,4 @@ function numberLength(number) {
 
 console.log( numberLength(5));
 console.log( numberLength(781));
-console.log( numberLength(3.2));
+console.log( numberLength(22e3));

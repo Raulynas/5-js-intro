@@ -5,6 +5,9 @@ function letters(text, num) {
     if ( typeof num !== 'number') {
         return 'ERROR: number must be positive and bigger than 0'
     }
+    if (isNaN(num)) {
+        return 'ERROR: second parameter has to be number'
+    }
     if (text.length === 0 || text.length > 100) {
         return 'ERROR: invalid input length'
     }
@@ -34,7 +37,8 @@ function letters(text, num) {
 // console.log(letters('abcdef', {}));
 // console.log(letters('abcdef', ''));
 
-console.log(letters('abcdefg', 2), '=> bdf');
-console.log(letters('abcdefghijkl', 3), '=> cfil');
-console.log(letters('abc', 1));
-console.log(letters('322', 2));
+console.log(letters('abcdefg', NaN), '=> bdf');
+// console.log(letters('abcdefghijkl', 3), '=> cfil');
+// console.log(letters('abc', 1));
+// console.log(letters('322', 2));
+// console.log(letters('1234', 2));
